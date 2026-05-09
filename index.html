@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic page setup: character set, viewport, title, fonts, icons, and CSS file. -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parit &amp; Jyoti — 28 &amp; 29 January 2027</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── NAVIGATION: fixed top menu with logo and section links ── -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">Doshelia</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#story">Our Story</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#venue">Venue</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#travel">Travel</a></li>
+        <li><a href="#rsvp" class="nav-cta">RSVP</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ── HERO: first screen users see, including names, date, venue, and countdown ── -->
+  <section id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-particles" id="particles"></div>
+    <div class="hero-content fade-in">
+      <p class="hero-pretext">
+        <span class="line-ornament"></span>
+        We Are Getting Married
+        <span class="line-ornament"></span>
+      </p>
+      <h1 class="hero-names">Parit <span class="amp">&amp;</span> Jyoti</h1>
+      <p class="hero-date">28 &amp; 29 January 2027</p>
+      <p class="hero-venue">
+        <i class="fa-solid fa-location-dot"></i>
+        White Sands Resort &nbsp;·&nbsp; Dar es Salaam, Tanzania
+      </p>
+
+      <!-- Live countdown numbers updated by script.js every second -->
+      <div class="countdown" id="countdown">
+        <div class="countdown-block">
+          <span class="count-num" id="days">000</span>
+          <span class="count-label">Days</span>
+        </div>
+        <div class="countdown-sep">:</div>
+        <div class="countdown-block">
+          <span class="count-num" id="hours">00</span>
+          <span class="count-label">Hours</span>
+        </div>
+        <div class="countdown-sep">:</div>
+        <div class="countdown-block">
+          <span class="count-num" id="minutes">00</span>
+          <span class="count-label">Minutes</span>
+        </div>
+        <div class="countdown-sep">:</div>
+        <div class="countdown-block">
+          <span class="count-num" id="seconds">00</span>
+          <span class="count-label">Seconds</span>
+        </div>
+      </div>
+
+      <div class="hero-actions">
+        <a href="#rsvp" class="btn btn-primary">RSVP Now</a>
+        <a href="#events" class="btn btn-outline">View Schedule</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <i class="fa-solid fa-chevron-down"></i>
+    </div>
+    <div class="hero-wave">
+      <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#fef6ec"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ── QUOTE BANNER: short highlighted quote section between hero and story ── -->
+  <section class="quote-banner reveal">
+    <div class="container">
+      <blockquote>
+        "Every love story is beautiful, but ours is our favourite."
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ── OUR STORY: timeline cards showing key relationship moments ── -->
+  <section id="story" class="story section-pad">
+    <div class="container">
+      <div class="section-heading reveal">
+        <p class="section-sub">How It All Began</p>
+        <h2 class="section-title">Our Story</h2>
+        <div class="title-ornament"><span></span><i class="fa-solid fa-heart"></i><span></span></div>
+      </div>
+
+      <div class="timeline">
+
+        <div class="timeline-item reveal" data-side="left">
+          <div class="timeline-dot">
+            <i class="fa-solid fa-mug-hot"></i>
+          </div>
+          <div class="timeline-card">
+            <span class="timeline-year">Where It Started</span>
+            <h3>The First Hello</h3>
+            <p>
+              It started with an ordinary afternoon that turned extraordinary — 
+              a mutual friend's gathering, a shared laugh about a terrible cup of tea, 
+              and a conversation that neither of them wanted to end. Neither Parit nor 
+              Jyoti had planned to meet the love of their life that day, but the universe 
+              had other ideas.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal" data-side="right">
+          <div class="timeline-dot">
+            <i class="fa-solid fa-utensils"></i>
+          </div>
+          <div class="timeline-card">
+            <span class="timeline-year">The First Date</span>
+            <h3>Dinner for Two</h3>
+            <p>
+              Their first proper date was spent at a cozy little restaurant, talking for 
+              so long that the staff had to politely hint it was closing time. Over shared 
+              plates and stolen glances, they discovered how perfectly their worlds fit 
+              together — music tastes, terrible puns, and a shared dream of seeing the ocean 
+              together someday.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal" data-side="left">
+          <div class="timeline-dot">
+            <i class="fa-solid fa-mountain-sun"></i>
+          </div>
+          <div class="timeline-card">
+            <span class="timeline-year">Adventures Together</span>
+            <h3>Exploring the World</h3>
+            <p>
+              From spontaneous road trips to carefully planned getaways, Parit and Jyoti 
+              explored the world one adventure at a time. Each journey added a new chapter 
+              to their story — from the hills to the coast — and with every destination, 
+              they realised home was wherever they were together.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal" data-side="right">
+          <div class="timeline-dot">
+            <i class="fa-solid fa-ring"></i>
+          </div>
+          <div class="timeline-card">
+            <span class="timeline-year">The Big Question</span>
+            <h3>He Asked, She Said Yes</h3>
+            <p>
+              As the sun melted into the Indian Ocean on a golden evening, Parit got down 
+              on one knee. With a trembling voice and a heart full of love, he asked the 
+              question he'd been rehearsing for weeks. Jyoti's yes was the one word that 
+              changed everything — and made the rest of their lives the greatest adventure yet.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal" data-side="left">
+          <div class="timeline-dot">
+            <i class="fa-solid fa-champagne-glasses"></i>
+          </div>
+          <div class="timeline-card">
+            <span class="timeline-year">And Now…</span>
+            <h3>The Next Chapter</h3>
+            <p>
+              Now, surrounded by the people they love most, beneath the stars on the shores 
+              of Dar es Salaam, Parit and Jyoti are ready to begin their forever. 
+              They are so grateful you're here to share this milestone with them. 
+              Let's celebrate love — loudly and joyfully.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TANZANIA PARALLAX DIVIDER: decorative full-width visual break ── -->
+  <div class="parallax-divider">
+    <div class="parallax-divider-content">
+      <p class="divider-label">
+        <span></span>
+        Dar es Salaam, Tanzania
+        <span></span>
+      </p>
+      <h2 class="divider-title">Where the Indian Ocean Meets Forever</h2>
+    </div>
+  </div>
+
+  <!-- ── EVENTS: day-by-day wedding schedule and dress note ── -->
+  <section id="events" class="events section-pad">
+    <div class="container">
+      <div class="section-heading reveal">
+        <p class="section-sub">Join Us For</p>
+        <h2 class="section-title">The Celebrations</h2>
+        <div class="title-ornament"><span></span><i class="fa-solid fa-star"></i><span></span></div>
+      </div>
+
+      <div class="events-grid">
+
+        <!-- Day 1 -->
+        <div class="event-day reveal">
+          <div class="event-day-header">
+            <div class="event-day-number">01</div>
+            <div>
+              <p class="event-day-label">Thursday</p>
+              <h3 class="event-day-date">28 January 2027</h3>
+            </div>
+          </div>
+          <div class="event-list">
+            <div class="event-item">
+              <div class="event-icon"><i class="fa-solid fa-hand-sparkles"></i></div>
+              <div class="event-details">
+                <h4>Mehendi Ceremony</h4>
+                <p class="event-time"><i class="fa-regular fa-clock"></i> 4:00 PM – 8:00 PM</p>
+                <p>A beautiful afternoon of henna, music, and togetherness as the bride gets adorned with intricate mehndi designs while friends and family gather to celebrate.</p>
+              </div>
+            </div>
+            <div class="event-item">
+              <div class="event-icon"><i class="fa-solid fa-music"></i></div>
+              <div class="event-details">
+                <h4>Sangeet Night</h4>
+                <p class="event-time"><i class="fa-regular fa-clock"></i> 8:00 PM – 12:00 AM</p>
+                <p>An electric evening of dance, laughter, and live music as both families come together for the iconic Sangeet celebration. Dinner will be served. Come ready to dance!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Day 2 -->
+        <div class="event-day reveal">
+          <div class="event-day-header">
+            <div class="event-day-number">02</div>
+            <div>
+              <p class="event-day-label">Friday</p>
+              <h3 class="event-day-date">29 January 2027</h3>
+            </div>
+          </div>
+          <div class="event-list">
+            <div class="event-item">
+              <div class="event-icon"><i class="fa-solid fa-person-praying"></i></div>
+              <div class="event-details">
+                <h4>Wedding Ceremony</h4>
+                <p class="event-time"><i class="fa-regular fa-clock"></i> 10:00 AM – 1:00 PM</p>
+                <p>The sacred ceremony where Parit and Jyoti will exchange their vows by the shores of the Indian Ocean, surrounded by the warmth of family and the sound of the sea.</p>
+              </div>
+            </div>
+            <div class="event-item">
+              <div class="event-icon"><i class="fa-solid fa-bowl-food"></i></div>
+              <div class="event-details">
+                <h4>Lunch &amp; Festivities</h4>
+                <p class="event-time"><i class="fa-regular fa-clock"></i> 1:00 PM – 5:00 PM</p>
+                <p>A relaxed beachside lunch with vibrant music, beach games, and time spent soaking up the Tanzanian sun with all the people who matter most.</p>
+              </div>
+            </div>
+            <div class="event-item">
+              <div class="event-icon"><i class="fa-solid fa-wine-glass"></i></div>
+              <div class="event-details">
+                <h4>Grand Reception</h4>
+                <p class="event-time"><i class="fa-regular fa-clock"></i> 7:00 PM – 12:00 AM</p>
+                <p>An unforgettable evening reception under the stars on the White Sands beachfront. Formal dinner, speeches, dancing, and celebration late into the warm Dar es Salaam night.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="events-note reveal">
+        <i class="fa-solid fa-circle-info"></i>
+        Dress code: <strong>Smart Festive</strong> for Day 1 &nbsp;·&nbsp; <strong>Formal / Traditional</strong> for Day 2
+      </p>
+    </div>
+  </section>
+
+  <!-- ── VENUE: location details, contact info, and embedded map ── -->
+  <section id="venue" class="venue section-pad">
+    <div class="venue-bg-img"></div>
+    <div class="venue-overlay"></div>
+    <div class="container venue-inner">
+      <div class="section-heading reveal">
+        <p class="section-sub" style="color:#e8d5a3">The Location</p>
+        <h2 class="section-title" style="color:#fff">Our Venue</h2>
+        <div class="title-ornament light"><span></span><i class="fa-solid fa-map-pin"></i><span></span></div>
+      </div>
+
+      <div class="venue-content">
+        <div class="venue-info reveal">
+          <div class="venue-card">
+            <h3>White Sands Resort</h3>
+            <p class="venue-tagline">Kunduchi Beach, Dar es Salaam, Tanzania</p>
+            <ul class="venue-details-list">
+              <li><i class="fa-solid fa-location-dot"></i> Kunduchi Beach Road, Dar es Salaam, Tanzania</li>
+              <li><i class="fa-solid fa-globe"></i> <a href="https://www.whitesandshotel.co.tz" target="_blank" rel="noopener">whitesandshotel.co.tz</a></li>
+              <li><i class="fa-solid fa-phone"></i> +255 22 265 0682</li>
+              <li><i class="fa-solid fa-plane-arrival"></i> ~30 min from Julius Nyerere International Airport</li>
+            </ul>
+            <p class="venue-desc">
+              Nestled along the pristine shores of Kunduchi Beach on the Indian Ocean, 
+              White Sands Resort is one of Dar es Salaam's most beloved beachfront retreats. 
+              With swaying palms, crystal-clear waters, and breathtaking sunsets, it is the 
+              perfect setting for Parit &amp; Jyoti's wedding celebration.
+            </p>
+            <a href="https://maps.google.com?q=White+Sands+Hotel+Dar+es+Salaam+Tanzania" target="_blank" rel="noopener" class="btn btn-gold">
+              <i class="fa-solid fa-map"></i> Get Directions
+            </a>
+          </div>
+        </div>
+        <div class="venue-map reveal">
+          <iframe
+            src="https://maps.google.com/maps?q=White+Sands+Hotel+Dar+es+Salaam+Tanzania&output=embed"
+            width="100%"
+            height="400"
+            style="border:0;border-radius:12px;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="White Sands Resort Map">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── GALLERY: photo grid that opens images in a lightbox overlay ── -->
+  <section id="gallery" class="gallery-section section-pad">
+    <div class="container">
+      <div class="section-heading reveal">
+        <p class="section-sub">Our Memories</p>
+        <h2 class="section-title">Gallery</h2>
+        <div class="title-ornament"><span></span><i class="fa-solid fa-camera"></i><span></span></div>
+        <p class="section-desc">A glimpse into the love story so far — more photos from the wedding coming soon!</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item reveal" style="--delay:0.1s">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&auto=format&fit=crop&q=80" alt="Tropical beach at sunset" loading="lazy" />
+          <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+        <div class="gallery-item reveal tall" style="--delay:0.2s">
+          <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=800&auto=format&fit=crop&q=80" alt="Wedding setup" loading="lazy" />
+          <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+        <div class="gallery-item reveal" style="--delay:0.3s">
+          <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=800&auto=format&fit=crop&q=80" alt="Tropical resort" loading="lazy" />
+          <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+        <div class="gallery-item reveal wide" style="--delay:0.15s">
+          <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=1200&auto=format&fit=crop&q=80" alt="Couple at sunset" loading="lazy" />
+          <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+        <div class="gallery-item reveal" style="--delay:0.25s">
+          <img src="https://images.unsplash.com/photo-1530023367847-a683933f4172?w=800&auto=format&fit=crop&q=80" alt="Tropical flowers" loading="lazy" />
+          <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+        <div class="gallery-item reveal tall" style="--delay:0.35s">
+          <img src="https://images.unsplash.com/photo-1559827291-b39db0046bba?w=800&auto=format&fit=crop&q=80" alt="Indian Ocean beach" loading="lazy" />
+          <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+        <div class="gallery-item reveal" style="--delay:0.2s">
+          <img src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?w=800&auto=format&fit=crop&q=80" alt="Beach palm trees" loading="lazy" />
+          <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+        <div class="gallery-item reveal" style="--delay:0.3s">
+          <img src="https://images.unsplash.com/photo-1561731216-c3a4d99437d5?w=800&auto=format&fit=crop&q=80" alt="Resort pool view" loading="lazy" />
+          <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+        <div class="gallery-item reveal wide" style="--delay:0.1s">
+          <img src="https://images.unsplash.com/photo-1545131561-9a4bad5e491b?w=1200&auto=format&fit=crop&q=80" alt="African coast sunset" loading="lazy" />
+          <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox overlay: hidden until a gallery image is clicked -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+    <button class="lightbox-nav prev" id="lightboxPrev" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
+    <img src="" alt="" id="lightboxImg" />
+    <button class="lightbox-nav next" id="lightboxNext" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
+  </div>
+
+  <!-- ── TRAVEL: practical guest information (flight, stay, visa, weather, activities) ── -->
+  <section id="travel" class="travel section-pad">
+    <div class="container">
+      <div class="section-heading reveal">
+        <p class="section-sub">Getting Here</p>
+        <h2 class="section-title">Travel &amp; Stay</h2>
+        <div class="title-ornament"><span></span><i class="fa-solid fa-plane"></i><span></span></div>
+      </div>
+
+      <div class="travel-grid">
+
+        <div class="travel-card reveal">
+          <div class="travel-icon"><i class="fa-solid fa-plane-arrival"></i></div>
+          <h3>By Air</h3>
+          <p>
+            Fly into <strong>Julius Nyerere International Airport (DAR)</strong>, 
+            the main international gateway to Dar es Salaam. The airport is approximately 
+            30 minutes from White Sands Resort by taxi or hotel transfer.
+          </p>
+          <p class="travel-tip">
+            <i class="fa-solid fa-lightbulb"></i> 
+            Major airlines flying to DAR include Ethiopian Airlines, Kenya Airways, 
+            Qatar Airways, Turkish Airlines, and Emirates.
+          </p>
+        </div>
+
+        <div class="travel-card reveal">
+          <div class="travel-icon"><i class="fa-solid fa-hotel"></i></div>
+          <h3>Accommodation</h3>
+          <p>
+            We have reserved a block of rooms at <strong>White Sands Resort</strong> 
+            for wedding guests. Please mention the group code <strong>"PARIT&amp;JYOTI2027"</strong> 
+            when booking to receive preferential rates.
+          </p>
+          <p class="travel-tip">
+            <i class="fa-solid fa-lightbulb"></i>
+            We recommend booking early — Dar es Salaam is beautiful in January and rooms fill up fast!
+          </p>
+        </div>
+
+        <div class="travel-card reveal">
+          <div class="travel-icon"><i class="fa-solid fa-car"></i></div>
+          <h3>Local Transport</h3>
+          <p>
+            The resort is easily accessible by private taxi or ride-hailing apps (Bolt and Uber 
+            are available in Dar es Salaam). We will also arrange shuttle services 
+            between the airport and the resort for guests arriving on 27 January 2027.
+          </p>
+          <p class="travel-tip">
+            <i class="fa-solid fa-lightbulb"></i>
+            Details of shuttle timings will be shared closer to the wedding date.
+          </p>
+        </div>
+
+        <div class="travel-card reveal">
+          <div class="travel-icon"><i class="fa-solid fa-id-card"></i></div>
+          <h3>Visa &amp; Entry</h3>
+          <p>
+            Most nationalities require a visa to enter Tanzania. You can obtain an 
+            <strong>eVisa online</strong> before travelling via the official Tanzania eVisa portal.
+            Processing typically takes 3–10 business days.
+          </p>
+          <p class="travel-tip">
+            <i class="fa-solid fa-lightbulb"></i>
+            Apply at <a href="https://visa.immigration.go.tz" target="_blank" rel="noopener">visa.immigration.go.tz</a> 
+            at least 2–3 weeks before departure.
+          </p>
+        </div>
+
+        <div class="travel-card reveal">
+          <div class="travel-icon"><i class="fa-solid fa-sun"></i></div>
+          <h3>Weather in January</h3>
+          <p>
+            Dar es Salaam in late January is warm and mostly dry — perfect wedding weather! 
+            Expect temperatures of <strong>28–34°C (82–93°F)</strong> with coastal breezes 
+            keeping things comfortable. Light, breathable fabrics are recommended.
+          </p>
+          <p class="travel-tip">
+            <i class="fa-solid fa-lightbulb"></i>
+            Sunscreen is a must! The equatorial sun is strong, especially on the beach.
+          </p>
+        </div>
+
+        <div class="travel-card reveal">
+          <div class="travel-icon"><i class="fa-solid fa-binoculars"></i></div>
+          <h3>Explore Tanzania</h3>
+          <p>
+            Make the most of your trip! Dar es Salaam is close to 
+            <strong>Zanzibar</strong> (a 2-hour ferry or 20-min flight), 
+            <strong>Serengeti</strong>, and <strong>Mount Kilimanjaro</strong>. 
+            Consider extending your stay for a mini-safari or beach holiday.
+          </p>
+          <p class="travel-tip">
+            <i class="fa-solid fa-lightbulb"></i>
+            Talk to us if you'd like help planning a Tanzania extension trip!
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── RSVP: form for guests to confirm attendance and preferences ── -->
+  <section id="rsvp" class="rsvp section-pad">
+    <div class="rsvp-bg"></div>
+    <div class="container">
+      <div class="section-heading reveal">
+        <p class="section-sub">You're Invited</p>
+        <h2 class="section-title">RSVP</h2>
+        <div class="title-ornament light"><span></span><i class="fa-solid fa-envelope-open-text"></i><span></span></div>
+        <p class="section-desc" style="color:#e8d5a3">
+          Please respond by <strong style="color:#fff">31 October 2026</strong> so we can prepare accordingly.
+        </p>
+      </div>
+
+      <div class="rsvp-wrapper reveal">
+        <form id="rsvpForm" class="rsvp-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="rsvpName">Full Name <span aria-hidden="true">*</span></label>
+              <input type="text" id="rsvpName" name="name" placeholder="Your full name" required />
+            </div>
+            <div class="form-group">
+              <label for="rsvpEmail">Email Address <span aria-hidden="true">*</span></label>
+              <input type="email" id="rsvpEmail" name="email" placeholder="your@email.com" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="rsvpGuests">Number of Guests (including yourself)</label>
+              <select id="rsvpGuests" name="guests">
+                <option value="1">1 (Just me)</option>
+                <option value="2" selected>2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5+">5 or more</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="rsvpMeal">Meal Preference</label>
+              <select id="rsvpMeal" name="meal">
+                <option value="veg">Vegetarian</option>
+                <option value="nonveg">Non-Vegetarian</option>
+                <option value="vegan">Vegan</option>
+                <option value="mixed">Mixed / No Preference</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group full">
+            <label>Attending</label>
+            <div class="checkbox-group">
+              <label class="checkbox-label">
+                <input type="checkbox" name="attending" value="day1" checked />
+                <span class="checkbox-custom"></span>
+                Day 1 – Mehendi &amp; Sangeet (28 Jan)
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="attending" value="day2" checked />
+                <span class="checkbox-custom"></span>
+                Day 2 – Wedding &amp; Reception (29 Jan)
+              </label>
+            </div>
+          </div>
+          <div class="form-group full">
+            <label for="rsvpMessage">Note / Dietary Requirements</label>
+            <textarea id="rsvpMessage" name="message" placeholder="Any special requirements or a sweet note for the couple..." rows="4"></textarea>
+          </div>
+          <div class="form-submit">
+            <button type="submit" class="btn btn-primary btn-large">
+              <i class="fa-solid fa-paper-plane"></i> Send RSVP
+            </button>
+          </div>
+        </form>
+
+        <!-- Success message shown after a valid RSVP submission -->
+        <div id="rsvpSuccess" class="rsvp-success" aria-live="polite" hidden>
+          <div class="success-icon"><i class="fa-solid fa-circle-check"></i></div>
+          <h3>Wonderful, you're on the list!</h3>
+          <p>Thank you for your RSVP. Parit &amp; Jyoti can't wait to celebrate with you. We'll be in touch with more details closer to the date.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER: closing details, location reminder, and signature line ── -->
+  <footer class="footer">
+    <div class="footer-wave">
+      <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z" fill="#0d4a5c"/>
+      </svg>
+    </div>
+    <div class="footer-inner">
+      <div class="footer-monogram">P <span>&amp;</span> J</div>
+      <p class="footer-names">Parit &amp; Jyoti</p>
+      <p class="footer-date">28 &amp; 29 January 2027</p>
+      <p class="footer-venue">
+        <i class="fa-solid fa-location-dot"></i>
+        White Sands Resort, Dar es Salaam, Tanzania
+      </p>
+      <div class="footer-divider"></div>
+      <p class="footer-copy">Made with <i class="fa-solid fa-heart" style="color:#e07a5f"></i> for Parit &amp; Jyoti &nbsp;·&nbsp; #ParitWedJyoti2027</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript file that powers interactions: menu, countdown, reveals, gallery, and RSVP -->
+  <script src="script.js"></script>
+</body>
+</html>
